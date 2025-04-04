@@ -1,0 +1,82 @@
+button{
+    background: linear-gradient(to right, #86481f, #bd7c52, #86481f);
+    background-size: 300% 100%;
+    width: 100%;
+    border-radius: 24px;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    animation: gradient-animation 3s ease-in-out infinite;
+}
+
+.type-of-plan{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.type-of-plan h1{
+    font-size: 28px;
+    margin: 8px;
+    font-style: italic;
+    padding: 4px;
+}
+.type-of-plan h2{
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.type-of-plan span{
+    font-size: 8px;
+}
+
+.plus h1{
+    background-image: linear-gradient(to right, #86481f, #86481f, #bd7c52, #86481f, #86481f, #86481f);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-size: 300% 300%;
+    animation: gradient-animation 3s ease-in-out infinite;
+}
+
+.plan-division{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+#plans{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: auto;
+}
+
+#plans-content{
+    aspect-ratio: 4 / 5;
+    border: 2px solid transparent;
+    border-image: linear-gradient(45deg, #86481f, #bd7c52, #86481f);
+    border-image-slice: 1;
+    animation: border-animation 3s linear infinite;
+    border-radius: 24px;
+}
+
+#plans-content p{
+    margin-top: 6px;
+    font-weight: 200;
+}
+
+@keyframes gradient-animation{
+    0% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 250% 50%;
+    }
+}

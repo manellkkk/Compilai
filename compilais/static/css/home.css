@@ -1,0 +1,31 @@
+.console{
+    background-color: #121011;
+    width: 60%;
+    height: 416px;
+    margin-top: 64px;
+    border-radius: 24px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.console h2{
+    padding-top: 24px;
+    padding-left: 24px;
+    font-size: 16px;
+}
+
+.console h1{
+    padding-left: 24px;
+    font-size: 64px;
+    color: #326fa5;
+}
+
+.console p{
+    padding-left: 24px;
+    padding-bottom: 24px;
+}
+
+#learning_text{
+    color: rgb(59, 173, 55);
+}

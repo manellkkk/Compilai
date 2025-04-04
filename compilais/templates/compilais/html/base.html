@@ -1,0 +1,41 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compilaí</title>
+    <link rel="shortcut icon" href="{% static 'images/icons/icon.png' %}" type="icon">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+</head>
+<body>
+    <header class="navbar">
+        <a href="{% url 'index' %}">
+            <div class="logo_navbar">
+                <img src="{% static 'images/icons/icon.png' %}" alt="#">
+                <h1>Compilaí</h1>
+            </div>
+        </a>
+        <div>
+            <ul>
+                <li><a href="{% url 'courses' %}">Cursos</a></li>
+                <li><a href="{% url 'plans' %}">Planos</a></li>
+                <li><a href="{% url 'dashboard' %}">Área do Aluno</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section>
+            <article>
+                {% block content %}{% endblock content %}
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;2025 Compilaí. Todos os direitos reservados.</p>
+    </footer>
+    <script src="{% static '/scripts/animation.js' %}"></script>
+</body>
+</html>

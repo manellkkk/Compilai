@@ -1,0 +1,48 @@
+{% extends "compilais/html/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<link rel="stylesheet" href="{% static 'css/index.css' %}">
+<link rel="stylesheet" href="{% static 'css/plans.css' %}">
+
+<article id="plans" class="table">
+    <div id="plans-content" class="table-content plus">
+        <div class="plan-division">
+            <div>
+                <div class="type-of-plan">
+                    <h1>PLUS</h1>
+                    <h2><strong>R$4,99<span>/mês</span></strong></h2>
+                </div>
+                <hr>
+                <div>
+                    <p>Cursos basicos</p>
+                </div>
+            </div>
+            <div>
+                <button>Assinar</button>
+            </div>
+        </div>
+    </div>
+    <div id="plans-content" class="table-content">
+        <h1>PREMIUM</h1>
+        <h2>R$9,99</h2>
+        <hr>
+        <div>
+            <p>Cursos intermediarios</p>
+        </div>
+        <button>Assinar</button>
+    </div>
+    <div id="plans-content" class="table-content">
+        <h1>GOLD</h1>
+        <h2>R$9,99</h2>
+        <hr>
+        <div>
+            <p>Cursos avancados</p>
+        </div>
+        <button>Assinar</button>
+    </div>
+</article>
+
+{% endblock content %}
